@@ -1,0 +1,283 @@
+baseurl = "https://bhy.eiu.app/"
+DefaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "zh-cn"
+title = "小楼一夜听春雨" # 首页, 左上角
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = false
+pygmentCodeFences = true
+#googleAnalytics = "XXX"
+enableEmoji = true
+
+# 这个部分是 首页banner
+[Params]
+hello = "Hi, 这里是小楼一夜听春雨!"
+# subtitle = "I can help you building financial freedom confidence"
+# subtitle = "I am convinced that such an immensely bright and beautiful tomorrow will arrive!"
+# subtitle = "I can help you building Cloud Native confidence"
+# subtitle = "to be a good CEO"
+# 这个是 logo, favicon.ico
+# logo = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/avatar-icon.png"
+# logo = "https://res.cloudinary.com/dmtixvmgt/image/upload/v1517280703/spongebob_logo_cmw84k.jpg"
+logo = "https://res.cloudinary.com/dmtixvmgt/image/upload/v1538907991/WechatIMG-touxiang_o3lpq6.jpg"
+# 网页标签中的图片
+# favicon = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/favicon.ico"
+favicon = "https://res.cloudinary.com/dmtixvmgt/image/upload/v1517278722/favicon_p9ur0o.ico"
+dateFormat = "January 2, 2006"
+commit = false
+# ad section, comment this to disable it
+ad = true
+rss = true
+comments = true
+sharebutton = true
+reward = true
+notoc = true
+#algolia = "d2134c5a8d250e6d3246594240c45201" # API key
+algolia = "6e99ce500680dd69eabd41bd1ddf44b2" # API key
+#gcse = "012737790962522169780:fd1izxsfgrs" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+#description = "SRE|曾云龙的博客|FinTech|Cloud Native|Big Data"
+#description = "SRE|ABCDEF"
+description = "小楼一夜听春雨"
+# description = "FinTech|Cloud Native|Big Data"
+errorpage = "https://res.cloudinary.com/dmtixvmgt/image/upload/v1538908352/404-not-found-cat_obbecv.png"
+
+
+# busuanzi
+busuanzi = true
+busuanzi_site_offset = 100000
+
+[blackfriday]
+hrefTargetBlank = true
+extensions = []
+
+[algolia]
+index = "tomtsang-hugo-blog"
+key = "6e99ce500680dd69eabd41bd1ddf44b2"
+appID = "UOVQ0F6Y70"
+# index = algolia index
+# key = Search-Only API Key
+# appID = Application ID
+
+
+
+
+#    [[Params.bigimg]]
+#    src = "https://res.cloudinary.com/jimmysong/image/upload/banners/keuc-cncf.jpg"
+#    desc = "KEUC - China Kubernetes End User Conference 2017"
+#
+#    [[Params.bigimg]]
+#    src = "https://res.cloudinary.com/jimmysong/image/upload/banners/kubernetes-meetup-china-20170826.jpg"
+#    desc = "Kubernetes Beijing fans meetup - Aug 28,2017"
+#
+#    [[Params.bigimg]]
+#    src = "https://res.cloudinary.com/jimmysong/image/upload/banners/cloud-computing.jpg"
+#    desc = "Democratizing the Cloud Computing for every one"
+#
+#    [[Params.bigimg]]
+#    src = "https://res.cloudinary.com/jimmysong/image/upload/banners/great-wall-01.jpg"
+#    desc = "Insight throught the Great Wall to the world"
+#
+#    [[Params.bigimg]]
+#    src = "https://res.cloudinary.com/jimmysong/image/upload/banners/big-data-1.jpg"
+#    desc = "Using Big Data to make business decision"
+
+
+# [[Params.bigimg]]
+# src = "https://res.cloudinary.com/dmtixvmgt/image/upload/v1517368082/Spongebob-spongebob-squarepants-1595656-1024-768_evwo0a.jpg"
+# desc = "Spongebob spongebob squarepants"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/dmtixvmgt/image/upload/v1517368079/Spongebob-Wallpaper-spongebob-squarepants-16205104-1024-768_twkbgn.jpg"
+desc = "Spongebob-Wallpaper-spongebob-squarepants"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/dmtixvmgt/image/upload/v1538791181/tencent-cloud-plus-20180630_cuesrl.jpg"
+desc = "tencent-cloud-geekbang-01"
+
+# 页尾, 联系方式
+[Author]
+  name = "Tom"
+  website = "https://b.qqbb.app"
+ # email = "tomtsang1987@gmail.com"
+  email = "273412935@qq.com"
+ # email = "766529074@.com"
+ # facebook = "tomtsang"
+ # googleplus = "+jimmysong" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "finsoftinfo"
+  twitter = "tomtsang1987"
+ # linkedin = "jimmysongio"
+
+# 菜单栏
+[[menu.main]]
+    identifier = "Categories"
+    name = "分类"
+    weight = 1
+
+[[menu.main]]
+    parent = "Categories"
+    name = "所有分类"
+    url = "categories/"
+    weight = 1
+
+[[menu.main]]
+    parent = "Categories"
+    name = "kubernetes"
+    url = "categories/kubernetes"
+    weight = 2
+    
+[[menu.main]]
+    parent = "Categories"
+    name = "docker"
+    url = "categories/docker"
+    weight = 3
+
+[[menu.main]]
+    parent = "Categories"
+    name = "python"
+    url = "categories/python"
+    weight = 4
+    
+[[menu.main]]
+    parent = "Categories"
+    name = "Github"
+    url = "categories/github"
+    weight = 5
+
+[[menu.main]]
+    parent = "Categories"
+    name = "mysql"
+    url = "categories/mysql"
+    weight = 6
+
+#[[menu.main]]
+#    parent = "Categories"
+#    name = "Cloud Native"
+#    url = "categories/cloud-native"
+#    weight = 3
+
+#[[menu.main]]
+#    parent = "Categories"
+#    name = "Microservices"
+#    url = "categories/microservices"
+#    weight = 4
+
+#[[menu.main]]
+#    parent = "Categories"
+#    name = "Devops"
+#   url = "categories/devops"
+#    weight = 4
+
+#[[menu.main]]
+#    parent = "Categories"
+#    name = "Serverless"
+#    url = "categories/serverless"
+#    weight = 6
+
+[[menu.main]]
+    identifier = "Post"
+    name = "归档"
+    url = "/post"
+    weight = 2
+
+# [[menu.main]]
+#     identifier = "Learn"
+#     name = "学习"
+#     weight = 2
+
+# [[menu.main]]
+#     parent = "Learn"
+#     name = "golang学习之路"
+#     url = "/learn/golang"
+#     weight = 1
+
+#[[menu.main]]
+#    identifier = "Books"
+#    name = "Books"
+#    weight = 2
+
+#[[menu.main]]
+#    parent = "Books"
+#    name = "Cloud Native Go"
+#    url = "https://jimmysong.io/cloud-native-go"
+#    weight = 1
+
+#[[menu.main]]
+#    parent = "Books"
+#    name = "Cloud Native Python"
+#    url = "posts/cloud-native-python"
+#    weight = 2
+
+#[[menu.main]]
+#    parent = "Books"
+#    name = "Kubernetes handbook"
+#    url = "https://jimmysong.io/kubernetes-handbook"
+#    weight = 3
+
+#[[menu.main]]
+#    parent = "Books"
+#    name = "Docker handbook"
+#    url = "https://jimmysong.io/docker-handbook"
+#    weight = 4
+
+#[[menu.main]]
+#    parent = "Books"
+#    name = "Hugo Handbook"
+#    url = "https://jimmysong.io/hugo-handbook"
+#    weight = 5
+
+#[[menu.main]]
+#    parent = "Books"
+#    name = "Istio service mesh"
+#    url = "http://istio.doczh.cn"
+#    weight = 6
+
+#[[menu.main]]
+#    parent = "Books"
+#    name = "Migrating to Cloud Native"
+#    url = "https://jimmysong.io/migrating-to-cloud-native-application-architectures"
+#    weight = 7
+
+
+
+[[menu.main]]
+    identifier = "Tags"
+    name = "标签"
+    url = "/tags"
+    weight = 4
+
+[[menu.main]]
+    name = "关于"
+    url = "/about"
+    weight = 5
+
+[[menu.main]]
+   identifier = "Projects"
+   name = "作品"
+   url = "/works"
+   weight = 6
+
+#[[menu.main]]
+#    parent = "Projects"
+#    name = "Awesome Cloud Native"
+#    url = "https://jimmysong.io/awesome-cloud-native"
+#    weight = 2
+
+#[[menu.main]]
+#    parent = "Projects"
+#    name = "Cloudinary go"
+#    url = "posts/cloudinary-go"
+#    weight = 3
+
+
+#[[menu.main]]
+#   parent = "Projects"
+#   name = "Cheatsheets"
+#   url = "https://qqbb.app/cheatsheets/"
+#   weight = 1
+
+#[[menu.main]]
+#   parent = "Projects"
+#   name = "Docs"
+#   url = "https://doctom.readthedocs.io/en/latest/"
+#   weight = 2
